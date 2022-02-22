@@ -1,0 +1,111 @@
+.node-wrapper {
+  padding: 5px 15px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.node-line {
+  top: 35px;
+  left: 8px;
+  position: absolute;
+  height: calc(100% - 50px);
+  width: 1px;
+  background-color: #fff;
+}
+
+.node-root {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.node__btn {
+  margin-left: 15px;
+  padding: 5px 10px;
+  background: none;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.node__btn_edit {
+  font-size: 18px;
+  padding: 1px 10px;
+  border: none;
+  background-color: rgb(58, 156, 49);
+}
+
+.node__btn_delete {
+  background-color: rgb(194, 63, 63);
+  border: none;
+}
+
+.node__edit {
+  margin-left: 15px;
+}
+
+.node__cube {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.node__arrow {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  transform: rotate(0);
+  transition: all ease 0.5s;
+}
+
+.node__arrow_disabled {
+  color: rgb(197, 197, 197);
+}
+
+.node__arrow_active {
+  transform: rotate(90deg);
+}
+
+.node-list {
+  margin-top: 15px;
+  margin-left: 15px;
+  flex-basis: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.list-form {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.list-form__input {
+  margin-right: 15px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background: none;
+  border: 1px solid rgb(80, 34, 75);
+  font-size: 18px;
+  outline: none;
+  color: #fff;
+}
+
+.list-form__btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  color: rgb(80, 34, 75);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.list-form__btn:disabled {
+  background-color: rgba(255, 255, 255, 0.411);
+}
